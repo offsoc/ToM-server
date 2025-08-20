@@ -273,6 +273,8 @@ export interface PowerLevelEventContent {
     'm.room.power_levels': number
     'm.room.encryption': number
   }
+  users?: Record<string, number>
+  creator_becomes?: number
 }
 
 export type Content = Record<
